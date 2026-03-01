@@ -638,7 +638,7 @@
 				<filter class="solr.LowerCaseFilterFactory" />
 				<!-- <filter class="solr.KeywordRepeatFilterFactory" /> -->
 				<filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt" />
-				<filter class="solr.StempelPolishStemFilterFactory" />
+				<!-- <filter class="solr.StempelPolishStemFilterFactory" /> -->
 				<!-- <filter class="solr.ASCIIFoldingFilterFactory" /> -->
 				<filter class="solr.RemoveDuplicatesTokenFilterFactory" />
 			</analyzer>
@@ -650,7 +650,7 @@
 				<filter class="solr.LowerCaseFilterFactory" />
 				<!-- <filter class="solr.KeywordRepeatFilterFactory" /> -->
 				<filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt" />
-				<filter class="solr.StempelPolishStemFilterFactory" />
+				<!-- <filter class="solr.StempelPolishStemFilterFactory" /> -->
 				<!-- <filter class="solr.MorphologikFilterFactory" /> -->
 				<!-- <filter class="solr.ASCIIFoldingFilterFactory" /> -->
 				<filter class="solr.RemoveDuplicatesTokenFilterFactory" />
@@ -777,11 +777,12 @@
 
 		<fieldType name="text_zh" class="solr.TextField" positionIncrementGap="100">
 			<analyzer type="index">
-				<charFilter class="solr.ICUNormalizer2CharFilterFactory" />
-				<tokenizer class="org.apache.lucene.analysis.cn.smart.HMMChineseTokenizerFactory" />
-				<filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified" />
-				<filter class="solr.StopFilterFactory" ignoreCase="true"
-					words="org/apache/lucene/analysis/cn/smart/stopwords.txt" />
+				<!-- <charFilter class="solr.ICUNormalizer2CharFilterFactory" /> -->
+				<!-- <tokenizer class="org.apache.lucene.analysis.cn.smart.HMMChineseTokenizerFactory" /> -->
+				<tokenizer class="solr.StandardTokenizerFactory" />
+				<!-- <filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified" /> -->
+				<!-- <filter class="solr.StopFilterFactory" ignoreCase="true"
+					words="org/apache/lucene/analysis/cn/smart/stopwords.txt" /> -->
 				<filter class="solr.ManagedStopFilterFactory" managed="zh" />
 				<!-- <filter class="solr.StopFilterFactory" ignoreCase="true" words="lang/stopwords_zh.txt" /> -->
 				<filter class="solr.LowerCaseFilterFactory" />
@@ -789,11 +790,12 @@
 				<filter class="solr.RemoveDuplicatesTokenFilterFactory" />
 			</analyzer>
 			<analyzer type="query">
-				<charFilter class="solr.ICUNormalizer2CharFilterFactory" />
-				<tokenizer class="org.apache.lucene.analysis.cn.smart.HMMChineseTokenizerFactory" />
-				<filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified" />
-				<filter class="solr.StopFilterFactory" ignoreCase="true"
-					words="org/apache/lucene/analysis/cn/smart/stopwords.txt" />
+				<!-- <charFilter class="solr.ICUNormalizer2CharFilterFactory" /> -->
+				<!-- <tokenizer class="org.apache.lucene.analysis.cn.smart.HMMChineseTokenizerFactory" /> -->
+				<tokenizer class="solr.StandardTokenizerFactory" />
+				<!-- <filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified" /> -->
+				<!-- <filter class="solr.StopFilterFactory" ignoreCase="true"
+					words="org/apache/lucene/analysis/cn/smart/stopwords.txt" /> -->
 				<filter class="solr.ManagedSynonymGraphFilterFactory" managed="zh" />
 				<filter class="solr.ManagedStopFilterFactory" managed="zh" />
 				<!-- <filter class="solr.StopFilterFactory" ignoreCase="true" words="lang/stopwords_zh.txt" /> -->
@@ -825,11 +827,12 @@
 
 		<fieldType name="text_zh_tw" class="solr.TextField" positionIncrementGap="100">
 			<analyzer type="index">
-				<charFilter class="solr.ICUNormalizer2CharFilterFactory" />
-				<tokenizer class="org.apache.lucene.analysis.cn.smart.HMMChineseTokenizerFactory" />
-				<filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified" />
-				<filter class="solr.StopFilterFactory" ignoreCase="true"
-					words="org/apache/lucene/analysis/cn/smart/stopwords.txt" />
+				<!-- <charFilter class="solr.ICUNormalizer2CharFilterFactory" /> -->
+				<!-- <tokenizer class="org.apache.lucene.analysis.cn.smart.HMMChineseTokenizerFactory" /> -->
+				<tokenizer class="solr.StandardTokenizerFactory" />
+				<!-- <filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified" /> -->
+				<!-- <filter class="solr.StopFilterFactory" ignoreCase="true"
+					words="org/apache/lucene/analysis/cn/smart/stopwords.txt" /> -->
 				<filter class="solr.ManagedStopFilterFactory" managed="zh_tw" />
 				<!-- <filter class="solr.StopFilterFactory" ignoreCase="true" words="lang/stopwords_zh_tw.txt" /> -->
 				<filter class="solr.LowerCaseFilterFactory" />
@@ -837,11 +840,12 @@
 				<filter class="solr.RemoveDuplicatesTokenFilterFactory" />
 			</analyzer>
 			<analyzer type="query">
-				<charFilter class="solr.ICUNormalizer2CharFilterFactory" />
-				<tokenizer class="org.apache.lucene.analysis.cn.smart.HMMChineseTokenizerFactory" />
-				<filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified" />
-				<filter class="solr.StopFilterFactory" ignoreCase="true"
-					words="org/apache/lucene/analysis/cn/smart/stopwords.txt" />
+				<!-- <charFilter class="solr.ICUNormalizer2CharFilterFactory" /> -->
+				<!-- <tokenizer class="org.apache.lucene.analysis.cn.smart.HMMChineseTokenizerFactory" /> -->
+				<tokenizer class="solr.StandardTokenizerFactory" />
+				<!-- <filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified" /> -->
+				<!-- <filter class="solr.StopFilterFactory" ignoreCase="true"
+					words="org/apache/lucene/analysis/cn/smart/stopwords.txt" /> -->
 				<filter class="solr.ManagedSynonymGraphFilterFactory" managed="zh_tw" />
 				<filter class="solr.ManagedStopFilterFactory" managed="zh_tw" />
 				<!-- <filter class="solr.StopFilterFactory" ignoreCase="true" words="lang/stopwords_zh_tw.txt" /> -->

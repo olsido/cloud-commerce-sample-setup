@@ -6,6 +6,7 @@
 <config>
 	<luceneMatchVersion>7.5.0</luceneMatchVersion>
 
+	<lib dir="${solr.install.dir:../../../..}/modules/analysis-extras/lib" regex=".*\.jar" />
 	<lib dir="${solr.install.dir:../../../..}/contrib/analysis-extras/lib" regex=".*\.jar" />
 	<lib dir="${solr.install.dir:../../../..}/contrib/analysis-extras/lucene-libs" regex=".*\.jar" />
 	<lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-analysis-extras-\d.*\.jar" />
@@ -14,7 +15,7 @@
 
 	<!-- RestManager storage should be index specific -->
 	<restManager>
-		<str name="storageIO">de.hybris.platform.solr.rest.IndexAwareStorageIO</str>
+		<!-- <str name="storageIO">de.hybris.platform.solr.rest.IndexAwareStorageIO</str> -->
 	</restManager>
 
 	<directoryFactory name="DirectoryFactory"
@@ -387,6 +388,6 @@
 		-->
 	</requestHandler>
 
-	<queryParser name="multiMaxScore" class="de.hybris.platform.solr.search.MultiMaxScoreQParserPlugin" />
+	<!-- <queryParser name="multiMaxScore" class="de.hybris.platform.solr.search.MultiMaxScoreQParserPlugin" /> -->
 
 </config>
