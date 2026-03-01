@@ -1,56 +1,86 @@
 <hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
   <extensions>
-
-
-
     <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
+
+    <!--  spartacus extensions -->
+    <extension name='spartacussampledata' />
+
+    <!--  adaptive-search -->
     <extension name='adaptivesearch' />
     <extension name='adaptivesearchbackoffice' />
     <extension name='adaptivesearchfacades' />
     <extension name='adaptivesearchsolr' />
     <extension name='adaptivesearchwebservices' />
+
+    <!--  api-registry -->
     <extension name='apiregistrybackoffice' />
     <extension name='apiregistryservices' />
+
+    <!--  assisted-services -->
     <extension name='assistedservicecustomerinterestsfacades' />
     <extension name='assistedservicefacades' />
     <extension name='assistedservicepromotionfacades' />
     <extension name='assistedserviceservices' />
     <extension name='assistedservicewebservices' />
+
+    <!--  assisted-services-integrations -->
     <extension name='assistedserviceyprofilefacades' />
     <extension name='yaasyprofileconnect' />
+
+    <!--  b2b-accelerator -->
     <extension name='b2bacceleratorbackoffice' />
     <extension name='b2bacceleratorfacades' />
     <extension name='b2bacceleratorservices' />
     <extension name='b2bocc' />
-    <extension name='b2bocctests' />
+    <!-- <extension name='b2bocctests' /> -->
     <extension name='b2bwebservicescommons' />
     <extension name='powertoolsstore' />
+
+    <!--  b2b-accelerator-addons -->
     <extension name='savedorderforms' />
     <extension name='savedorderformsocc' />
+
+    <!--  b2b-commerce -->
     <extension name='b2bapprovalprocess' />
     <extension name='b2bapprovalprocessfacades' />
     <extension name='b2bcommerce' />
     <extension name='b2bcommercebackoffice' />
     <extension name='b2bcommercefacades' />
+
+    <!--  b2b-punchout -->
     <extension name='b2bpunchout' />
     <extension name='b2bpunchoutbackoffice' />
     <extension name='b2bpunchoutocc' />
-    <extension name='b2bpunchoutocctests' />
+    <!-- <extension name='b2bpunchoutocctests' /> -->
+
+    <!--  b2c-accelerator -->
     <extension name='apparelstore' />
     <extension name='electronicsstore' />
+
+    <!--  b2c-accelerator-addons -->
     <extension name='wishlist' />
+
+    <!--  backoffice-applications -->
     <extension name='classificationgroupsservices' />
     <extension name='mediaconversionbackoffice' />
     <extension name='patchesbackoffice' />
     <extension name='pcmbackoffice' />
+    <!-- <extension name='samlssobackoffice' /> -->
+
+    <!--  backoffice-framework -->
     <extension name='backoffice' />
     <extension name='platformbackoffice' />
     <extension name='ybackoffice' />
+
+    <!--  base-accelerator -->
     <extension name='yacceleratorbackoffice' />
     <extension name='yacceleratorcore' />
     <extension name='yacceleratorfacades' />
+    <!-- <extension name='yacceleratorfulfilmentprocess' /> -->
     <extension name='yacceleratorinitialdata' />
-    <extension name='yacceleratorstorefront' />
+    <!-- <extension name='yacceleratortest' /> -->
+
+    <!--  base-commerce -->
     <extension name='basecommerce' />
     <extension name='basecommercebackoffice' />
     <extension name='customerreview' />
@@ -59,75 +89,149 @@
     <extension name='promotionsbackoffice' />
     <extension name='voucher' />
     <extension name='voucherbackoffice' />
+
+    <!--  cds-integration -->
     <extension name='profileservices' />
+
+    <!--  cds-merchandising -->
     <extension name='merchandisingcmswebservices' />
     <extension name='merchandisingservices' />
     <extension name='merchandisingservicesbackoffice' />
     <extension name='merchandisingsmartedit' />
+
+    <!--  china-accelerator-addons -->
     <extension name='chinesecommercewebservicescommons' />
+    <!-- <extension name='chinesestoreservices' /> -->
+
+    <!--  china-accelerator-address -->
     <extension name='chineseaddressbackoffice' />
     <extension name='chineseaddressfacades' />
     <extension name='chineseaddressocc' />
+    <!-- <extension name='chineseaddressocctests' /> -->
     <extension name='chineseaddressservices' />
     <extension name='chinesecommerceorgaddressfacades' />
+
+    <!--  china-accelerator-alipay-psp -->
+    <!-- <extension name='chinesepspalipaysbackoffice' /> -->
+    <!-- <extension name='chinesepspalipayservices' /> -->
+
+    <!--  china-accelerator-logistics -->
+    <!-- <extension name='chineselogisticbackoffice' /> -->
+    <!-- <extension name='chineselogisticfacades' /> -->
+    <!-- <extension name='chineselogisticocc' /> -->
+    <!-- //<extension name='chineselogisticocctests' /> -->
+    <!-- <extension name='chineselogisticservices' /> -->
+
+    <!--  china-accelerator-payment -->
+    <!-- <extension name='chinesepaymentfacades' /> -->
+    <!-- <extension name='chinesepaymentmock' /> -->
+    <!-- <extension name='chinesepaymentocc' /> -->
+    <!-- //<extension name='chinesepaymentocctests' /> -->
+    <!-- <extension name='chinesepaymentservices' /> -->
+
+    <!--  china-accelerator-people-profile -->
+    <!-- <extension name='chineseprofilefacades' /> -->
+    <!-- <extension name='chineseprofileocc' /> -->
+    <!-- //<extension name='chineseprofileocctests' /> -->
+    <!-- <extension name='chineseprofileservices' /> -->
+
+    <!--  china-accelerator-tax-invoice -->
+    <!-- <extension name='chinesetaxinvoicebackoffice' /> -->
+    <!-- <extension name='chinesetaxinvoicefacades' /> -->
+    <!-- <extension name='chinesetaxinvoiceocc' /> -->
+    <!-- //<extension name='chinesetaxinvoiceocctests' /> -->
+    <!-- <extension name='chinesetaxinvoiceservices' /> -->
+
+    <!--  china-accelerator-wechat-psp -->
+    <!-- <extension name='chinesepspwechatpaysbackoffice' /> -->
+    <!-- <extension name='chinesepspwechatpayservices' /> -->
+
+    <!--  commerce-services -->
     <extension name='commercefacades' />
     <extension name='commerceservices' />
     <extension name='commerceservicesbackoffice' />
     <extension name='commercewebservices' />
     <extension name='commercewebservicescommons' />
-    <extension name='commercewebservicestests' />
+    <!-- <extension name='commercewebservicestests' /> -->
     <extension name='yocc' />
-    <extension name='yocctests' />
+    <!-- <extension name='yocctests' /> -->
+
+    <!--  configurable-bundle -->
     <extension name='configurablebundlebackoffice' />
     <extension name='configurablebundlefacades' />
     <extension name='configurablebundleocc' />
-    <extension name='configurablebundleocctests' />
+    <!-- <extension name='configurablebundleocctests' /> -->
     <extension name='configurablebundleservices' />
+
+    <!--  configurator-complex-products -->
     <extension name='sapproductconfigb2bservices' />
     <extension name='sapproductconfigfacades' />
     <extension name='sapproductconfigocc' />
-    <extension name='sapproductconfigocctests' />
+    <!-- <extension name='sapproductconfigocctests' /> -->
     <extension name='sapproductconfigrules' />
     <extension name='sapproductconfigrulesbackoffice' />
     <extension name='sapproductconfigruntimeinterface' />
     <extension name='sapproductconfigruntimemock' />
     <extension name='sapproductconfigservices' />
+
+    <!--  consignment-tracking -->
     <extension name='consignmenttrackingbackoffice' />
     <extension name='consignmenttrackingfacades' />
     <extension name='consignmenttrackingmock' />
     <extension name='consignmenttrackingocc' />
+    <!-- //<extension name='consignmenttrackingocctests' /> -->
     <extension name='consignmenttrackingservices' />
+
+    <!--  core-accelerator -->
     <extension name='acceleratorbackoffice' />
     <extension name='acceleratorcms' />
     <extension name='acceleratorfacades' />
     <extension name='acceleratorocc' />
     <extension name='acceleratorservices' />
+
+    <!--  coupon -->
     <extension name='couponbackoffice' />
     <extension name='couponfacades' />
     <extension name='couponservices' />
     <extension name='couponwebservices' />
+
+    <!--  customer-coupon -->
     <extension name='customercouponbackoffice' />
     <extension name='customercouponfacades' />
     <extension name='customercouponocc' />
     <extension name='customercouponservices' />
+
+    <!--  customer-interest -->
     <extension name='customerinterestsfacades' />
     <extension name='customerinterestsocc' />
+    <!-- //<extension name='customerinterestsocctests' /> -->
     <extension name='customerinterestsservices' />
+
+    <!--  customer-service -->
     <extension name='customersupportbackoffice' />
     <extension name='customerticketingfacades' />
     <extension name='customerticketingocc' />
-    <extension name='customerticketingocctests' />
+    <!-- <extension name='customerticketingocctests' /> -->
     <extension name='ticketsystem' />
     <extension name='ticketsystembackoffice' />
+
+    <!--  data-hub-adapter -->
     <extension name='datahubadapter' />
+    <!-- <extension name='datahubbackoffice' /> -->
     <extension name='datahubclient' />
     <extension name='dataimportcommons' />
+
+    <!--  entitlements -->
     <extension name='entitlementbackoffice' />
     <extension name='entitlementfacades' />
     <extension name='entitlementservices' />
+
+    <!--  event-tracking -->
+
+    <!--  integration-apis -->
     <extension name='inboundservices' />
     <extension name='integrationbackoffice' />
-    <extension name='integrationbackofficetest' />
+    <!-- <extension name='integrationbackofficetest' /> -->
     <extension name='integrationmonitoringbackoffice' />
     <extension name='integrationservices' />
     <extension name='odata2services' />
@@ -137,13 +241,34 @@
     <extension name='outboundsyncbackoffice' />
     <extension name='webhookbackoffice' />
     <extension name='webhookservices' />
+
+    <!--  marketplace -->
+    <!-- <extension name='marketplacebackoffice' /> -->
+    <!-- <extension name='marketplacefacades' /> -->
+    <!-- <extension name='marketplaceocc' /> -->
+    <!-- <extension name='marketplaceservices' /> -->
+    <!-- <extension name='marketplacestore' /> -->
+    <!-- <extension name='yacceleratormarketplaceintegration' /> -->
+
+    <!--  message-center -->
     <extension name='messagecentercsfacades' />
     <extension name='messagecentercsocc' />
     <extension name='messagecentercsservices' />
+
+    <!--  notification -->
     <extension name='notificationfacades' />
     <extension name='notificationocc' />
+    <!-- //<extension name='notificationocctests' /> -->
     <extension name='notificationservices' />
+
+    <!--  npm-ancillary -->
     <extension name='npmancillary' />
+
+    <!--  open-payment-framework -->
+    <extension name='opffacades' />
+    <extension name='opfservices' />
+
+    <!--  order-management -->
     <extension name='b2bordermanagementfacades' />
     <extension name='b2bordermanagementwebservices' />
     <extension name='ordermanagementfacades' />
@@ -153,6 +278,8 @@
     <extension name='warehousingfacades' />
     <extension name='warehousingwebservices' />
     <extension name='yacceleratorordermanagement' />
+
+    <!--  personalization -->
     <extension name='personalizationcms' />
     <extension name='personalizationcmsbackoffice' />
     <extension name='personalizationcmsweb' />
@@ -164,31 +291,47 @@
     <extension name='personalizationsmartedit' />
     <extension name='personalizationwebservices' />
     <extension name='previewpersonalizationweb' />
+
+    <!--  personalization-integration -->
     <extension name='personalizationyprofile' />
+
+    <!--  personalization-promotion -->
     <extension name='personalizationpromotions' />
     <extension name='personalizationpromotionsbackoffice' />
     <extension name='personalizationpromotionssmartedit' />
     <extension name='personalizationpromotionsweb' />
+
+    <!--  personalization-search -->
     <extension name='personalizationsearch' />
     <extension name='personalizationsearchbackoffice' />
     <extension name='personalizationsearchsmartedit' />
     <extension name='personalizationsearchweb' />
+
+    <!--  platform -->
     <extension name='adminapi' />
     <extension name='alluicommons' />
     <extension name='auditreportservices' />
+    <!-- <extension name='azurecloud' /> -->
     <extension name='azuredtu' />
     <extension name='deltadetection' />
     <extension name='embeddedserver' />
     <extension name='groovynature' />
     <extension name='mediaconversion' />
     <extension name='patches' />
+    <!-- <extension name='patchesdemo' /> -->
+    <!-- <extension name='samlsinglesignon' /> -->
     <extension name='springintegrationlibs' />
     <extension name='tomcatembeddedserver' />
+    <!-- <extension name='ydocumentcart' /> -->
     <extension name='yempty' />
     <extension name='yhacext' />
     <extension name='yvoid' />
+
+    <!--  promotion-engine -->
     <extension name='promotionenginebackoffice' />
     <extension name='promotionengineservices' />
+
+    <!--  rule-engine -->
     <extension name='droolsruleengineservices' />
     <extension name='ordercalculation' />
     <extension name='rulebuilderbackoffice' />
@@ -196,41 +339,65 @@
     <extension name='ruleengine' />
     <extension name='ruleenginebackoffice' />
     <extension name='ruleengineservices' />
+
+    <!--  sap-btp-extensions-integration -->
     <extension name='kymaintegrationbackoffice' />
     <extension name='kymaintegrationservices' />
+
+    <!--  search-and-navigation -->
     <extension name='backofficesolrsearch' />
     <extension name='solrfacetsearch' />
     <extension name='solrfacetsearchbackoffice' />
     <extension name='solrserver' />
+
+    <!--  search-services -->
     <extension name='backofficesearchservices' />
     <extension name='searchbackoffice' />
     <extension name='searchprovidercssearchbackoffice' />
     <extension name='searchprovidercssearchservices' />
     <extension name='searchservices' />
+
+    <!--  selective-cart -->
     <extension name='selectivecartfacades' />
     <extension name='selectivecartservices' />
+
+    <!--  smartedit -->
     <extension name='cmssmartedit' />
     <extension name='cmssmarteditwebservices' />
     <extension name='smartedit' />
     <extension name='smartedittools' />
     <extension name='smarteditwebservices' />
+    <!-- <extension name='ysmarteditmodule' /> -->
+
+    <!--  stock-notification -->
     <extension name='stocknotificationfacades' />
     <extension name='stocknotificationservices' />
+
+    <!--  subscription-bundles -->
     <extension name='subscriptionbundlebackoffice' />
     <extension name='subscriptionbundlefacades' />
     <extension name='subscriptionbundleservices' />
+
+    <!--  subscriptions -->
+    <!-- <extension name='cissubscription' /> -->
     <extension name='subscriptionbackoffice' />
     <extension name='subscriptionfacades' />
     <extension name='subscriptionservices' />
+
+    <!--  text-field-configurator-template -->
     <extension name='textfieldconfiguratortemplatebackoffice' />
     <extension name='textfieldconfiguratortemplatefacades' />
     <extension name='textfieldconfiguratortemplateocc' />
-    <extension name='textfieldconfiguratortemplateocctests' />
+    <!-- <extension name='textfieldconfiguratortemplateocctests' /> -->
     <extension name='textfieldconfiguratortemplateservices' />
+
+    <!--  timed-access-promotion-engine -->
     <extension name='timedaccesspromotionenginebackoffice' />
     <extension name='timedaccesspromotionenginefacades' />
     <extension name='timedaccesspromotionengineocc' />
     <extension name='timedaccesspromotionengineservices' />
+
+    <!--  web-content-management-system -->
     <extension name='cms2' />
     <extension name='cms2lib' />
     <extension name='cmsbackoffice' />
@@ -238,42 +405,19 @@
     <extension name='cmsocc' />
     <extension name='cmswebservices' />
     <extension name='previewwebservices' />
+
+    <!--  web-services-commons -->
     <extension name='permissionsfacades' />
     <extension name='permissionswebservices' />
     <extension name='swaggerintegration' />
     <extension name='webservicescommons' />
     <extension name='ywebservices' />
+
+    <!--  yforms -->
     <extension name='orbeonweb' />
     <extension name='xyformsbackoffice' />
     <extension name='xyformsfacades' />
     <extension name='xyformsservices' />
     <extension name='xyformsweb' />
-
-<!-- accelerator + addons are legacy, do not use anymore; just configured to enable end-to-end showcase -->
-    <extension name= 'ordermanagementaddon' />
-
-
-<!-- Sample Custom Extensions -->
-  <extension name= 'spartacussampledata' />
-
-<!-- For more information where to find those extensions: -->
-<!-- https://launchpad.support.sap.com/#/notes/2817992 -->
-  <extension name='azurecloudhotfolder' />
-  <extension name='cloudcommons' />
-  <extension name='cloudhotfolder' />
-
-
-<!-- Configuring Required Extensions and AddOns for SAP Commerce integration with SAP Cloud Platform Integration -->
-<!-- https://help.sap.com/viewer/product/SAP_COMMERCE_INTEGRATIONS/latest -->
-  <!--<extension name='sapcpiadapter'/>
-  <extension name='sapcpiorderexchange'/>
-  <extension name='ysaporderfulfillment'/>
-  <extension name='integrationbackoffice'/>
-  <extension name='sapcoreconfigurationbackoffice'/>
-  <extension name='sapmodelbackoffice'/>
-  <extension name='saporderexchangebackoffice'/>
-  <extension name='sapcoreaddon'/>-->    
-
-
   </extensions>
 </hybrisconfig>
